@@ -62,9 +62,23 @@
             >
           </h1>
           <div class="button-place">
-          <button type="button" class="button-order">
+          <button type="button" class="button-order" data-modal-open>
             <span>Zamów usługę</span>
           </button>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <div class="border-close-button">
+            <button class="close-button" data-modal-close>
+              <svg class="close-button-icon">
+                <use xlink href="./images/icons.svg#icon-close-btn" 
+                width="11"
+                height="11">
+                </use>
+              </svg>
+            </button>
+          </div>
+          </div>
+        </div>
         </div>
       </section>
       <section class="wrap section">
@@ -393,5 +407,6 @@
           </ul>
         </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

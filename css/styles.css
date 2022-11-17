@@ -700,3 +700,50 @@ h3 {
   left: 0;
   width: 100%;
 }
+
+.modal {
+  width: 528px;
+  height: 581px;
+  border-radius: 4px;
+  background-color: var(--main-white);
+  box-shadow: 0px 2px 1px 0px #00000033;
+  box-shadow: 0px 1px 1px 0px #00000024;
+  box-shadow: 0px 1px 3px 0px #0000001f;
+  margin: auto;
+}
+
+.backdrop {
+  position: fixed;
+  display: flex;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: transform 0.25s;
+}
+.is-hidden {
+  transform: translateX(-100%);
+}
+
+.close-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+}
+
+.close-button-icon {
+  color: var(--black);
+  position: absolute;
+}
+
+.border-close-button {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  left: 490px;
+  top: 8px;
+}
