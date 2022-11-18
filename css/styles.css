@@ -741,20 +741,27 @@ h3 {
   border-radius: 50%;
   cursor: pointer;
   position: absolute;
+  border: none;
+  background-color: var(--main-white);
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .close-button-icon {
   color: var(--black);
   position: absolute;
-  top: 4px;
-  left: 4px;
 }
 
 .border-close-button {
-  border-radius: 50%;
   width: 30px;
   height: 30px;
   position: relative;
   left: 490px;
   top: 8px;
+}
+
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
